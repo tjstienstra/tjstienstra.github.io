@@ -25,6 +25,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tjstienstra.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  TJStienstra
 
+staticman_url: https://tjstienstra-blog.herokuapp.com/v3/entry/github/TJStienstra/tjstienstra.github.io/main/comments
+
 # Build settings
 theme: minima
 plugins:
