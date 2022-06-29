@@ -4,7 +4,6 @@ title:  "Kinematic loops"
 date:   2022-06-24 15:55:00 +0200
 categories: GSoC 2022
 ---
-## Kinematic loops
 While preparing for my exams here is a post to just put some thoughts about kinematic loops in joints on paper. In this discussion I will first limit myself to the Kanes method, since that is currently the best supported method within SymPy. In this post I will start with a quick look on what are constraints. Next we will start forming some arbitrary kinematic loops, which would be good test cases. After which I hope to speak a bit about how the problems can be solved and some different kinds of possible implementations.
 
 The table below shows the different definitions for the symbols used in this post.
