@@ -1,0 +1,10 @@
+_id: d1602a20-f7e3-11ec-b028-cba6b4d85c5a
+parent_id: ''
+message: >-
+  Something that should also be kept in mind is that the end solution should
+  also be ready for future features around for example adding nonholonomic
+  constraints. Besides this the user should also be able to choose the
+  (in)dependent generalized coordinates. Overall it is important to also think
+  here a bit more about the user API.
+name: Timo
+date: 1656531838
