@@ -46,6 +46,8 @@ Lastly, there is also still a need for more joint types, so that is also where I
 
 <!---PinJoint incorrect velocity--->
 [#22956]: https://github.com/sympy/sympy/issues/22956
+<!---Incorrect velocity calculation in Point.vel--->
+[#23358]: https://github.com/sympy/sympy/issues/23358
 <!---PrismaticJoint velocity discussion--->
 [#23393]: https://github.com/sympy/sympy/issues/23393
 <!---Joint explanation--->
