@@ -153,8 +153,8 @@ $$g_{hd}=\begin{bmatrix}0\\0\\0\\0\\0\end{bmatrix}$$
 $$L=\begin{bmatrix}1 & 0 & 0 & 0 & 0\\- \tan{\left(q_{2} \right)} & 1 & 0 & 0 & 0\\0 & 0 & 1 & 0 & 0\\0 & 0 & 0 & 1 & 0\\0 & 0 & 0 & 0 & 1\end{bmatrix}$$
 $$U=\begin{bmatrix}0 & L \cos{\left(q_{2} \right)}\\0 & 0\\0 & 0\\0 & 0\\0 & 0\end{bmatrix}$$
 
-As you can clearly see $$rank(U)=1$$, so there are two active constraints. Which means that we can use the following equation for the active constraints: `L[:rank(U), :] * U * u + g_hd[:rank(U), :]`:
-$$\begin{bmatrix}1 & 0 & 0 & 0 & 0\end{bmatrix}\cdot\begin{bmatrix}0 & L \cos{\left(q_{2} \right)}\\0 & 0\\0 & 0\\0 & 0\\0 & 0\end{bmatrix}\cdot\begin{bmatrix}u_1\\u_2\end{bmatrix}+\begin{bmatrix}0\\0\end{bmatrix}=\begin{bmatrix}L u_{2} \cos{\left(q_{2} \right)}\end{bmatrix}$$
+As you can clearly see $$rank(U)=1$$, so there is one active constraint. Which means that we can use the following equation for the active constraints: `L[:rank(U), :] * U * u + g_hd[:rank(U), :]`:
+$$\begin{bmatrix}1 & 0 & 0 & 0 & 0\end{bmatrix}\cdot\begin{bmatrix}0 & L \cos{\left(q_{2} \right)}\\0 & 0\\0 & 0\\0 & 0\\0 & 0\end{bmatrix}\cdot\begin{bmatrix}u_1\\u_2\end{bmatrix}+\begin{bmatrix}0\end{bmatrix}=\begin{bmatrix}L u_{2} \cos{\left(q_{2} \right)}\end{bmatrix}$$
 
 Note that it should also be possible in this method to immediately solve the problem for the dependent $$\vec{u}$$, partially reusing the computed $$L$$ and $$U$$.
 
